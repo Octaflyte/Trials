@@ -1,0 +1,23 @@
+.bg-price {
+	background-color: hsla(0, 100%, 50%, 1);
+	background-image: radial-gradient(
+			at 28% 36%,
+			hsla(6, 80%, 64%, 1) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 0% 44%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+		radial-gradient(at 86% 74%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+		radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+		radial-gradient(at 0% 87%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+		radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+}
+.bg-check {
+	background-color:#9999ff;
+background-image:
+radial-gradient(at 5% 68%, hsla(184,61%,76%,1) 0px, transparent 50%),
+radial-gradient(at 84% 87%, hsla(165,63%,77%,1) 0px, transparent 50%),
+radial-gradient(at 93% 70%, hsla(147,99%,65%,1) 0px, transparent 50%),
+radial-gradient(at 39% 41%, hsla(246,98%,77%,1) 0px, transparent 50%),
+radial-gradient(at 95% 91%, hsla(233,71%,66%,1) 0px, transparent 50%),
+radial-gradient(at 67% 100%, hsla(34,72%,63%,1) 0px, transparent 50%);
+}

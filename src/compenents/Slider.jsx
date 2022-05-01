@@ -19,8 +19,8 @@ const SliderComponent = () => {
 		},
 	};
 	return (
-		<div className="bg-gradient-to-b to-[#ebecf2] from-[#edeef3] h-screen overflow-hidden flex flex-col">
-			<div className="flex flex-row justify-center items-center gap-x-6 mt-10 mb-5">
+		<div className="bg-gradient-to-b to-[#ebecf2] from-[#edeef3] md:h-screen overflow-hidden flex flex-col ">
+			<div className="hidden md:flex flex-row justify-center items-center gap-x-6 mt-10 mb-5">
 				<div className="flex flex-col items-center">
 					<img
 						src="https://cdn.discordapp.com/attachments/869221017015439420/963140463014072320/process.png"
@@ -201,9 +201,9 @@ const SliderComponent = () => {
 					</div>
 				</div>
 			</div>
-			<div className="px-10 md:px-20 flex flex-row items-center justify-around">
+			<div className="px-5 md:px-20 flex flex-row items-center justify-around">
 				<div
-					className="text-gray-400 cursor-pointer"
+					className="hidden md:block text-gray-400 cursor-pointer"
 					onClick={() => sliderref.current.slickPrev()}
 				>
 					<svg
@@ -221,14 +221,104 @@ const SliderComponent = () => {
 						/>
 					</svg>
 				</div>
-				<div className="w-[95%]">
+				<div className="flex flex-col mt-10 md:hidden">
+					<div>
+						<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+							<div className="w-full md:w-1/2">
+								<img src={ProcessIll} className="h-64" />
+							</div>
+							<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
+								<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
+									Process
+								</div>
+								<div className="text-lg text-gray-500 font-semibold font-roboto">
+									Just upload the UAV captured images and ByteGIS will process
+									these at scale to deliver you orthomosaics and DSMs on time.
+									Notification will be sent once datasets are ready.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+							<div className="w-full md:w-1/2">
+								<img src={WebAppIll} className="h-64" />
+							</div>
+							<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
+								<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
+									Web App
+								</div>
+								<div className="text-lg text-gray-500 font-semibold font-roboto">
+									ByteGIS comes with a web app where you can view these datasets
+									anytime with popular base layers, just by simply logging in.
+									It also has a powerful geometry editor that can be used to
+									draw geometries. Now create your own feature layers, training
+									data sets and annotate maps.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+							<div className="w-full md:w-1/2">
+								<img src={AnayliseIll} className="h-64" />
+							</div>
+							<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
+								<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
+									Analyze
+								</div>
+								<div className="text-lg text-gray-500 font-semibold font-roboto">
+									Use pre-trained models to run analysis on your orthomosaics.
+									Now automatically classifies vegetation, buildings and cars.
+									You can also train your own custom models. Draw geometries
+									over your layers to measure lengths, areas & volumes.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+							<div className="w-full md:w-1/2">
+								<img src={CollabrateIll} className="h-64" />
+							</div>
+							<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
+								<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
+									Collaborate
+								</div>
+								<div className="text-lg text-gray-500 font-semibold font-roboto">
+									Share these projects with your stakeholders and team just by
+									sharing URLs. View real-time edits made by your team for
+									smooth collaboration. All your projects are listed together in
+									one place, making it easy to handle multiple projects.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+							<div className="w-full md:w-1/2">
+								<img src={SavingIll} className="h-64" />
+							</div>
+							<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
+								<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
+									Savings
+								</div>
+								<div className="text-lg text-gray-500 font-semibold font-roboto">
+									Build custom subscription plans as per the needs of your
+									organization to maximize your savings.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="hidden md:block md:w-[98%]">
 					<Slider {...settings} ref={sliderref}>
-						<div className="">
-							<div className="flex flex-row bg-gray-100 shadow-lg rounded-lg p-20 m-5">
-								<div className="w-1/2">
+						<div>
+							<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+								<div className="w-full md:w-1/2">
 									<img src={ProcessIll} className="h-64" />
 								</div>
-								<div className="w-1/2 flex flex-col justify-around ml-5">
+								<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
 									<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
 										Process
 									</div>
@@ -241,11 +331,11 @@ const SliderComponent = () => {
 							</div>
 						</div>
 						<div>
-							<div className="flex flex-row bg-gray-100 shadow-lg rounded-lg p-20 m-5">
-								<div className="w-1/2">
+							<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+								<div className="w-full md:w-1/2">
 									<img src={WebAppIll} className="h-64" />
 								</div>
-								<div className="w-1/2 flex flex-col justify-around ml-5">
+								<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
 									<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
 										Web App
 									</div>
@@ -260,11 +350,11 @@ const SliderComponent = () => {
 							</div>
 						</div>
 						<div>
-							<div className="flex flex-row bg-gray-100 shadow-lg rounded-lg p-20 m-5">
-								<div className="w-1/2">
+							<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+								<div className="w-full md:w-1/2">
 									<img src={AnayliseIll} className="h-64" />
 								</div>
-								<div className="w-1/2 flex flex-col justify-around ml-5">
+								<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
 									<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
 										Analyze
 									</div>
@@ -278,11 +368,11 @@ const SliderComponent = () => {
 							</div>
 						</div>
 						<div>
-							<div className="flex flex-row bg-gray-100 shadow-lg rounded-lg p-20 m-5">
-								<div className="w-1/2">
+							<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+								<div className="w-full md:w-1/2">
 									<img src={CollabrateIll} className="h-64" />
 								</div>
-								<div className="w-1/2 flex flex-col justify-around ml-5">
+								<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
 									<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
 										Collaborate
 									</div>
@@ -296,11 +386,11 @@ const SliderComponent = () => {
 							</div>
 						</div>
 						<div>
-							<div className="flex flex-row bg-gray-100 shadow-lg rounded-lg p-20 m-5">
-								<div className="w-1/2">
+							<div className="flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-lg p-10 md:p-20 m-5">
+								<div className="w-full md:w-1/2">
 									<img src={SavingIll} className="h-64" />
 								</div>
-								<div className="w-1/2 flex flex-col justify-around ml-5">
+								<div className="w-full md:w-1/2 flex flex-col justify-around ml-5">
 									<div className="text-3xl text-gray-600 font-bold font-roboto tracking-wide">
 										Savings
 									</div>
@@ -314,7 +404,7 @@ const SliderComponent = () => {
 					</Slider>
 				</div>
 				<div
-					className="text-gray-400 cursor-pointer"
+					className="hidden md:block text-gray-400 cursor-pointer"
 					onClick={() => sliderref.current.slickNext()}
 				>
 					<svg
