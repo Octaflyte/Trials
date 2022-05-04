@@ -61,7 +61,7 @@ function Roadmap() {
 				</div>
 				<div className="w-full md:w-2/5">
 					<div className="text-2xl font-bold font-roboto text-gray-900 tracking-wide">
-						A One place to manage, process, annotate, classify and share your
+						A platform to manage, process, annotate, classify and share your
 						map
 					</div>
 					<div className="flex flex-row md:flex-col mt-6 gap-y-6 gap-x-4 justify-center">
