@@ -26,27 +26,6 @@ function PriceComponent() {
 					</div>
 					<div className="flex flex-col mt-10 gap-y-4">
 						<div className="flex flex-row items-center">
-							<div className="p-[2px] text-gray-200 bg-gray-800/50 rounded-full">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-4 w-4"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-									stroke-width="2"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="M6 18L18 6M6 6l12 12"
-									/>
-								</svg>
-							</div>
-							<div className="text-sm font-semibold font-roboto tracking-wider text-gray-400 ml-2">
-								<span className="text-gray-500">No</span> ByteGIS credits
-							</div>
-						</div>
-						<div className="flex flex-row items-center">
 							<div className="p-[2px] text-gray-200 bg-blue-800/50 rounded-full">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +44,28 @@ function PriceComponent() {
 							</div>
 
 							<div className="text-sm font-semibold font-roboto tracking-wider text-gray-400 ml-2">
-								<span className="text-gray-500">2 seats</span> per organization
+								<span className="text-gray-500">1 month free subscription</span> with 1 admin account
+							</div>
+						</div>
+						<div className="flex flex-row items-center">
+							<div className="p-[2px] text-gray-200 bg-gray-800/50 rounded-full">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-4 w-4"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6 18L18 6M6 6l12 12"
+									/>
+								</svg>
+							</div>
+							<div className="text-sm font-semibold font-roboto tracking-wider text-gray-400 ml-2">
+								<span className="text-gray-500">No</span> ByteGIS credits
 							</div>
 						</div>
 						<div className="flex flex-row items-center">
@@ -158,7 +158,7 @@ function PriceComponent() {
 								</svg>
 							</div>
 							<div className="text-sm font-semibold font-roboto tracking-wider text-gray-200 ml-2">
-								ByteGIS credits for <span className="text-white">2 months</span>
+								2 month free subscription with <span className="text-white">3 admin accounts included</span>
 							</div>
 						</div>
 						<div className="flex flex-row items-center">
@@ -178,9 +178,8 @@ function PriceComponent() {
 									/>
 								</svg>
 							</div>
-
 							<div className="text-sm font-semibold font-roboto tracking-wider text-gray-200 ml-2">
-								<span className="text-white">10 seats</span> per organization
+								ByteGIS credits for <span className="text-white">2 months</span>
 							</div>
 						</div>
 						<div className="flex flex-row items-center">

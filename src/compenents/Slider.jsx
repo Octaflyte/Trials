@@ -269,7 +269,7 @@ const SliderComponent = () => {
 								</div>
 								<div className="text-lg text-gray-500 font-semibold font-roboto">
 									Use pre-trained models to run analysis on your orthomosaics.
-									Now automatically classifies vegetation, buildings and cars.
+									which automatically classifies vegetation, buildings and cars.
 									You can also train your own custom models. Draw geometries
 									over your layers to measure lengths, areas & volumes.
 								</div>
@@ -304,8 +304,7 @@ const SliderComponent = () => {
 									Savings
 								</div>
 								<div className="text-lg text-gray-500 font-semibold font-roboto">
-									Build custom subscription plans as per the needs of your
-									organization to maximize your savings.
+									Low-priced subscription plans and credit based processing helps you maximize your savings.
 								</div>
 							</div>
 						</div>
@@ -360,7 +359,7 @@ const SliderComponent = () => {
 									</div>
 									<div className="text-lg text-gray-500 font-semibold font-roboto">
 										Use pre-trained models to run analysis on your orthomosaics.
-										Now automatically classifies vegetation, buildings and cars.
+										which automatically classifies vegetation, buildings and cars.
 										You can also train your own custom models. Draw geometries
 										over your layers to measure lengths, areas & volumes.
 									</div>
@@ -395,8 +394,7 @@ const SliderComponent = () => {
 										Savings
 									</div>
 									<div className="text-lg text-gray-500 font-semibold font-roboto">
-										Build custom subscription plans as per the needs of your
-										organization to maximize your savings.
+										Low-priced subscription plans and credit based processing helps you maximize your savings.
 									</div>
 								</div>
 							</div>
