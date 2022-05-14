@@ -2,7 +2,10 @@
 
 function PriceComponent() {
   return (
-		<div className="bg-gradient-to-b from-[#ebecf2] to-[#edeef3] h-screen ">
+		<div
+			className="bg-gradient-to-b from-[#ebecf2] to-[#edeef3] h-screen "
+			id="price"
+		>
 			<div className="flex flex-col-reverse md:flex-row p-10 md:p-20 justify-center">
 				<div className="bg-gray-200  md:w-[30%] rounded-xl flex flex-col px-5 py-10 mr-2 mt-5 md:mt-0">
 					<div className="text-gray-400">
@@ -44,7 +47,8 @@ function PriceComponent() {
 							</div>
 
 							<div className="text-sm font-semibold font-roboto tracking-wider text-gray-400 ml-2">
-								<span className="text-gray-500">1 month free subscription</span> with 1 admin account
+								<span className="text-gray-500">1 month free subscription</span>{" "}
+								with 1 admin account
 							</div>
 						</div>
 						<div className="flex flex-row items-center">
@@ -158,7 +162,8 @@ function PriceComponent() {
 								</svg>
 							</div>
 							<div className="text-sm font-semibold font-roboto tracking-wider text-gray-200 ml-2">
-								2 month free subscription with <span className="text-white">3 admin accounts included</span>
+								2 month free subscription with{" "}
+								<span className="text-white">3 admin accounts included</span>
 							</div>
 						</div>
 						<div className="flex flex-row items-center">
@@ -226,9 +231,12 @@ function PriceComponent() {
 							</div>
 						</div>
 					</div>
-					<div className="mt-10 text-center rounded-full text-sm font-bold uppercase px-4 py-2 bg-gradient-to-tr from-gray-400/50 to-gray-200/50 backdrop-blur-md tracking-wide cursor-pointer">
+					<a
+						href="#enquire"
+						className="mt-10 text-center rounded-full text-sm font-bold uppercase px-4 py-2 bg-gradient-to-tr from-gray-400/50 to-gray-200/50 backdrop-blur-md tracking-wide cursor-pointer"
+					>
 						Early Pass
-					</div>
+					</a>
 					<div className="mt-10 text-xs text-gray-300">
 						* After these, pay as per demand
 					</div>

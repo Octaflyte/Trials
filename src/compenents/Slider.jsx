@@ -19,7 +19,7 @@ const SliderComponent = () => {
 		},
 	};
 	return (
-		<div className="bg-gradient-to-b to-[#ebecf2] from-[#edeef3] md:h-screen overflow-hidden flex flex-col ">
+		<div className="bg-gradient-to-b to-[#ebecf2] from-[#edeef3] md:h-screen overflow-hidden flex flex-col " id="about">
 			<div className="hidden md:flex flex-row justify-center items-center gap-x-6 mt-10 mb-5">
 				<div className="flex flex-col items-center">
 					<img

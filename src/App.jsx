@@ -9,14 +9,14 @@ import Footer from "./compenents/Footer";
 function App() {
 	const MainComponent = () => {
 		return (
-			<>
+			<div>
 				<Home />
 				<Slider />
 				<Roadmap />
 				<PriceComponent />
 				<Email />
 				<Footer />
-			</>
+			</div>
 		);
 	};
 	return <MainComponent />;
