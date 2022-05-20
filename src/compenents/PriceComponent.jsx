@@ -3,7 +3,7 @@
 function PriceComponent() {
   return (
 		<div
-			className="bg-gradient-to-b from-[#ebecf2] to-[#edeef3] h-screen "
+			className="bg-gradient-to-b from-[#ebecf2] to-[#edeef3] md:h-screen "
 			id="price"
 		>
 			<div className="flex flex-col-reverse md:flex-row p-10 md:p-20 justify-center">

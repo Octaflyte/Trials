@@ -1,4 +1,3 @@
-import BgImg from "../assets/bg.png";
 const Home = () => {
 	return (
 		<div
@@ -47,7 +46,7 @@ const Home = () => {
 				</div>
 				<div className="absolute -z-10 md:relative md:z-0 md:block md:w-3/5 overflow-hidden">
 					<img
-						src={BgImg}
+						src="https://betatrials.blob.core.windows.net/assests/bg.webp"
 						alt="bg"
 						className="h-screen md:w-full md:h-full lg:ml-10"
 					/>

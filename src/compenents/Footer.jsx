@@ -1,10 +1,12 @@
 import ReactFreezeframe from "react-freezeframe";
-import MailGif from "../assets/mail.gif";
-import YouTubeGif from "../assets/youtube.gif";
-import Linkedin from "../assets/linkden.gif";
-import InstaGif from "../assets/insta.gif";
+const MailGif = "https://betatrials.blob.core.windows.net/assests/mail.webp";
+const InstaGif = "https://betatrials.blob.core.windows.net/assests/insta.webp";
+const Linkedin =
+	"https://betatrials.blob.core.windows.net/assests/linkden.webp";
+const YouTubeGif =
+	"https://betatrials.blob.core.windows.net/assests/youtube.webp";
 function Footer() {
-  return (
+	return (
 		<div className="bg-gray-300 ">
 			<div className="flex flex-row justify-center items-center py-3 gap-x-8">
 				<a className="cursor-pointer" href="mailto:info@octaflyte.com">
@@ -40,4 +42,4 @@ function Footer() {
 	);
 }
 
-export default Footer
+export default Footer;

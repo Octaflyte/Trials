@@ -1,14 +1,3 @@
-import ProjectGif from "../assets/roadmap_project.gif";
-import ProcessingGif from "../assets/roadmap_processing.gif";
-import ManagmentPng from "../assets/management.png";
-import ViewPng from "../assets/roadmap_view.gif";
-import AIpng from "../assets/roadmap_ai.png";
-import ShareGig from "../assets/roadmap_collab.gif";
-import DronePng from "../assets/drone.png";
-import AnalysisPng from "../assets/analysis.png";
-import MeasurePng from "../assets/measure.png";
-
-import CollaboratePng from "../assets/collaborate.png";
 import { useState } from "react";
 
 const SideMenu = [
@@ -16,35 +5,35 @@ const SideMenu = [
 		title: "Project Manager",
 		description:
 			"Manage projects efficiently by adding name & description all in one place",
-		img: ManagmentPng,
-		gif: ProjectGif,
+		img: "https://betatrials.blob.core.windows.net/assests/management.webp",
+		gif: "https://betatrials.blob.core.windows.net/assests/roadmap_project.webp",
 	},
 	{
 		title: "UAV data processing",
 		description:
 			"Simply upload drone images and our platform will start processing them.",
-		img: DronePng,
-		gif: ProcessingGif,
+		img: "https://betatrials.blob.core.windows.net/assests/drone.webp",
+		gif: "https://betatrials.blob.core.windows.net/assests/roadmap_processing.webp",
 	},
 	{
 		title: "View layers, annotate & measure them",
 		description: "Orthomosaics & elevation with our powerful geometry toolbar",
-		img: MeasurePng,
-		gif: ViewPng,
+		img: "https://betatrials.blob.core.windows.net/assests/measure.webp",
+		gif: "https://betatrials.blob.core.windows.net/assests/roadmap_view.webp",
 	},
 	{
 		title: "Detect objects, classify scenes using AI",
 		description:
 			"Custom ML models to perform classification and object detection",
-		img: AnalysisPng,
-		gif: AIpng,
+		img: "https://betatrials.blob.core.windows.net/assests/analysis.webp",
+		gif: "https://betatrials.blob.core.windows.net/assests/roadmap_ai.webp",
 	},
 	{
 		title: "Share and collaborate with teams",
 		description:
 			"Teams can work simultaneously on large feature layers and map.",
-		img: CollaboratePng,
-		gif: ShareGig,
+		img: "https://betatrials.blob.core.windows.net/assests/collaborate.webp",
+		gif: "https://betatrials.blob.core.windows.net/assests/roadmap_collab.webp",
 	},
 ];
 
@@ -52,7 +41,7 @@ function Roadmap() {
 	const [selectedId, SetselectedId] = useState(0);
 	return (
 		<div className="bg-gradient-to-b to-[#ebecf2] from-[#edeef3] h-screen">
-			<div className="flex flex-col-reverse md:flex-row px-10 md:px-20 py-20">
+			<div className="flex flex-col-reverse md:flex-row px-10 md:px-20 py-20 md:items-center">
 				<div className="w-full  md:w-3/5 mt-5 md:mt-0 md:mr-6 ">
 					<img
 						src={SideMenu[selectedId].gif}
@@ -61,8 +50,7 @@ function Roadmap() {
 				</div>
 				<div className="w-full md:w-2/5">
 					<div className="text-2xl font-bold font-roboto text-gray-900 tracking-wide">
-						A platform to manage, process, annotate, classify and share your
-						map
+						A platform to manage, process, annotate, classify and share your map
 					</div>
 					<div className="flex flex-row md:flex-col mt-6 gap-y-6 gap-x-4 justify-center">
 						{SideMenu.map((obj, i) => (

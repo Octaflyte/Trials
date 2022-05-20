@@ -1,6 +1,5 @@
 import Home from "./compenents/Home";
 import Slider from "./compenents/Slider";
-import CardElement from "./compenents/CardElement";
 import Roadmap from "./compenents/Roadmap";
 import PriceComponent from "./compenents/PriceComponent";
 import "./App.css";
