@@ -27,8 +27,8 @@ const Home = () => {
 						</a>
 					</div>
 					<div className="mt-44">
-						<div className="text-3xl font-[600] font-roboto text-gray-600 tracking-widest leading-normal">
-							<span className="text-[#ED6A5A]">Byte Gis</span>, Collaborative
+						<div className="text-3xl font-[600] font-roboto text-gray-600 tracking-wider leading-normal">
+							<span className="text-[#ED6A5A]">ByteGis</span>, Collaborative
 							platform for handling GIS data
 						</div>
 						<div className="mt-6 text-lg font-roboto text-gray-500 tracking-wide font-medium">

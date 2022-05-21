@@ -1,5 +1,13 @@
 import { useState } from "react";
-
+const Processing = new Image();
+Processing.src =
+	"https://betatrials.blob.core.windows.net/assests/roadmap_processing.webp";
+const Annotate = new Image();
+Annotate.src =
+	"https://betatrials.blob.core.windows.net/assests/roadmap_view.webp";
+const Share = new Image();
+Share.src =
+	"https://betatrials.blob.core.windows.net/assests/roadmap_collab.webp";
 const SideMenu = [
 	{
 		title: "Project Manager",
@@ -13,13 +21,13 @@ const SideMenu = [
 		description:
 			"Simply upload drone images and our platform will start processing them.",
 		img: "https://betatrials.blob.core.windows.net/assests/drone.webp",
-		gif: "https://betatrials.blob.core.windows.net/assests/roadmap_processing.webp",
+		gif: Processing.src,
 	},
 	{
 		title: "View layers, annotate & measure them",
 		description: "Orthomosaics & elevation with our powerful geometry toolbar",
 		img: "https://betatrials.blob.core.windows.net/assests/measure.webp",
-		gif: "https://betatrials.blob.core.windows.net/assests/roadmap_view.webp",
+		gif: Annotate.src,
 	},
 	{
 		title: "Detect objects, classify scenes using AI",
@@ -33,7 +41,7 @@ const SideMenu = [
 		description:
 			"Teams can work simultaneously on large feature layers and map.",
 		img: "https://betatrials.blob.core.windows.net/assests/collaborate.webp",
-		gif: "https://betatrials.blob.core.windows.net/assests/roadmap_collab.webp",
+		gif: Share.src,
 	},
 ];
 

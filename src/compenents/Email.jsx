@@ -12,7 +12,7 @@ function Email() {
 			<div className="h-full w-full md:w-[40%] mt-2 md:mt-0 flex flex-col justify-center">
 				<div>
 					<div className="text-5xl font-bold text-[#ED6A5A] tracking-wider">
-						Byte Gis
+						ByteGis
 					</div>
 					<div className="text-2xl font-semibold tracking-wide mt-5 text-gray-800">
 						Unfold your wings by signing up !
